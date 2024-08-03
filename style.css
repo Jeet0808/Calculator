@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(238, 230, 230);
+}
+
+#calculator{
+    font-family: Arial,  sans-serif;
+  
+    background-color: rgb(14, 157, 239);
+    border-radius: 15px;
+    max-width: 400px;
+    overflow: hidden;
+    height: 500px;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: left;
+    border: none;
+    background-color: rgb(84, 178, 250);
+    color: white;
+}
+
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+  
+
+
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.703);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgba(42, 32, 75, 0.758);
+
+}
+button:active{
+    background-color: rgb(182, 178, 178);
+    
+}
+
+
+.oper{
+    background-color: rgba(102, 2, 69, 0.63);
+}
+.oper:hover{
+    background-color: rgba(94, 78, 142, 0.449);
+}
+
+.oper:active{
+    background-color: rgb(13, 23, 53);
+}
+
+
+#me{
+   position: absolute;
+   margin-left: 150px;
+  margin-top: -20px;
+}
+
+#me a {
+    text-decoration: none;
+    color: rgb(14, 157, 239);
+    font-family:'Times New Roman', Times, serif;
+    animation-name: me;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes me {
+    0%{
+        color: rgb(14, 157, 239);
+
+    }
+    50%{
+        color: rgb(50, 1, 59);
+    }
+    100%{
+        color: rgb(14, 157, 239);
+    }
+
+
+}
+
